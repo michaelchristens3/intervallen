@@ -1,19 +1,18 @@
 package intervallen;
 
 public class Interval {
-	int ondergrens;
-	int bovengrens;
+	private int ondergrens;
+	private int bovengrens;
 	
-	static void setOndergrens(Interval interval, int ondergrens) {
-		interval.ondergrens = ondergrens;
+	void setOndergrens(int ondergrens) {
+		this.ondergrens = ondergrens;
 	}
 	
-	static void setBovengrens(Interval interval, int bovengrens) {
-		interval.bovengrens = bovengrens;
+	void setBovengrens(int bovengrens) {
+		this.bovengrens = bovengrens;
 	}
 	
-	static int getLength(Interval interval) {
-		return interval.bovengrens - interval.ondergrens;
+	int getLength() {
+		return this.bovengrens - this.ondergrens;
 	}
-
 }
